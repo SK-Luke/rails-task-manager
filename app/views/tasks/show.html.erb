@@ -1,0 +1,9 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><%= @task.completed %></p>
+
+<% if @task.completed %>
+<p><input class="form-check-input me-1" type="checkbox" value="" checked> The task is completed</p>
+<% else %>
+<p><input class="form-check-input me-1" type="checkbox" value=""> The task is not complete</p>
+<% end %>
