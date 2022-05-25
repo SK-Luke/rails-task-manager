@@ -2,8 +2,14 @@
 <br>
 <br>
 
-<%= simple_form_for(@task) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :details %>
-  <%= f.submit %>
-<% end %>
+<div>
+  <%= simple_form_for(@task) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :details %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<div class = mt-3>
+  <%= link_to '<back' , tasks_path, class: 'links'  %>
+</div>

@@ -1,1 +1,29 @@
 @import "bootstrap/scss/bootstrap";
+h1 {
+  color: red;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  background-color: aliceblue;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  padding: 10px 24px;
+}
+
+.links:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 12px;
+  padding: 4px;
+}

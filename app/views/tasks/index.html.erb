@@ -4,13 +4,13 @@
 
 <h1> <strong> My Tasks </strong></h1>
 
-<div class="task-list">
+<div class="d-flex flex-column bd-highlight mb-3">
   <ul class="list-group">
   <% @tasks.each do |task| %>
-    <li class="list-group-item">
+    <li class="listings list-group-item" >
     <input class="form-check-input me-1" type="checkbox" value="">
     <%= link_to task.title, task_path(task) %>
-    <%= link_to "Delete #{task.title}",
+    <%= link_to "🗑️",
             task_path(task),
             method: :delete,
             data: { confirm: "Are you sure?" } %>
@@ -19,4 +19,4 @@
   </ul>
 </div>
 
-<%= link_to 'Create new task' , tasks_new_path  %>
+<%= link_to 'Create new task' , tasks_new_path, class: 'links'  %>

@@ -1,6 +1,9 @@
+<br>
+<br>
+<br>
+
 <h2><%= @task.title %></h2>
-<p><%= @task.details %></p>
-<p><%= @task.completed %></p>
+<p class = "text-box"><%= @task.details %></p>
 
 <% if @task.completed %>
 <p><input class="form-check-input me-1" type="checkbox" value="" checked> The task is completed</p>
@@ -8,5 +11,5 @@
 <p><input class="form-check-input me-1" type="checkbox" value=""> The task is not complete</p>
 <% end %>
 
-<%= link_to '<back' , tasks_path  %>
-<%= link_to 'Edit a task' , edit_task_path  %>
+<%= link_to '<back' , tasks_path, class: 'links'  %>
+<%= link_to 'Edit a task' , edit_task_path, class: 'links'  %>
