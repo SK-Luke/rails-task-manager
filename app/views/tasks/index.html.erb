@@ -10,7 +10,13 @@
     <li class="list-group-item">
     <input class="form-check-input me-1" type="checkbox" value="">
     <%= link_to task.title, task_path(task) %>
+    <%= link_to "Delete #{task.title}",
+            task_path(task),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
     </li>
   <% end %>
   </ul>
 </div>
+
+<%= link_to 'Create new task' , tasks_new_path  %>
